@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * ✅ Fixed Bullet Tests
  */
 class BulletTest {
-    private Bullet bullet;
+    public Bullet bullet;
 
     @BeforeEach
     void setUp() {

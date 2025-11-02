@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * ทดสอบการเคลื่อนไหวของศัตรู
  */
 class SoldierMovementTest {
-    private Soldier soldier;
+    public Soldier soldier;
 
     @BeforeEach
     void setUp() {

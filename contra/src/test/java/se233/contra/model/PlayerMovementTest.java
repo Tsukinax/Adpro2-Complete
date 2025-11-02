@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * ทดสอบการเคลื่อนไหวของ Player โดยไม่ผ่าน Input Handler
  */
 class PlayerMovementTest {
-    private Player player;
+    public Player player;
 
     @BeforeEach
     void setUp() {

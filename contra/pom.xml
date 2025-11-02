@@ -72,6 +72,13 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    <!-- JUnit Suite Test -->
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-suite-engine</artifactId>
+      <version>1.11.0</version>
+      <scope>test</scope>
+    </dependency>
 
     <!-- Mockito -->
     <dependency>
@@ -150,6 +157,7 @@
           </execution>
         </executions>
       </plugin>
+
 
       <!-- Surefire Plugin (Tests) -->
       <plugin>

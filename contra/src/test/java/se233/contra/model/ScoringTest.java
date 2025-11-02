@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * ทดสอบระบบคะแนน: การเพิ่มคะแนน, คะแนนเริ่มต้น, คะแนนสะสม
  */
 class ScoringTest {
-    private Player player;
+    public Player player;
 
     @BeforeEach
     void setUp() {

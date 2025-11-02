@@ -6,11 +6,12 @@ import se233.contra.view.SpriteLoader;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GameControllerTest {
-    private GameController gameController;
+// ✅ เพิ่ม public ตรงนี้
+public class GameControllerTest {
+    public GameController gameController;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         try {
             SpriteLoader.initialize();
         } catch (Exception e) {
@@ -21,15 +22,13 @@ class GameControllerTest {
     }
 
     @Test
-    void testGameControllerInitialization() {
+    public void testGameControllerInitialization() {
         assertNotNull(gameController);
         assertEquals(GameController.GameState.MENU, gameController.getCurrentState());
     }
 
-
-
     @Test
-    void testWaveProgression() {
+    public void testWaveProgression() {
         gameController.startGame();
 
         assertEquals(1, gameController.getCurrentWave());
@@ -37,7 +36,7 @@ class GameControllerTest {
     }
 
     @Test
-    void testPause() {
+    public void testPause() {
         gameController.startGame();
         assertFalse(gameController.isPaused());
 
@@ -49,7 +48,7 @@ class GameControllerTest {
     }
 
     @Test
-    void testUpdate() {
+    public void testUpdate() {
         gameController.startGame();
 
         // Should not throw exception
